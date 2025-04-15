@@ -10,6 +10,7 @@ on:
 
 jobs:
   test:
+    name: 🧪 Run Unit Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -30,6 +31,7 @@ jobs:
         npm run test -- --coverage
 
   upload-coverage:
+    name: ☁️ Upload to Codecov
     runs-on: ubuntu-latest
     if: always()
     needs: test
