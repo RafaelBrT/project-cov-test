@@ -34,3 +34,4 @@ jobs:
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         slug: RafaelBrT/project-cov-test
+      continue-on-error: true
