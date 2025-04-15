@@ -18,6 +18,7 @@ const config: Config.InitialOptions = {
       statements: 80,
     },
   },
+  coverageReporters: ['lcov', 'text'],
   testEnvironment: 'node',
   transform: {
     '^.+\\.(t|j)s$': 'ts-jest'
